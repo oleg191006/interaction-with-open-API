@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/byName.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm" class="form" method="post">
+        <div class="title">Enter the main ingredient</div>
+        <input type="text" class="nameInput" id="nameInput" name="name" />
+        <div class="btn">
+          <input
+            id="get"
+            class="btn-back button"
+            type="submit"
+            value="Back to home page"
+            formaction="/"
+          />
+          <input
+            id="get"
+            class="btn-submit button"
+            type="submit"
+            value="Search"
+            formaction="/cocktail"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

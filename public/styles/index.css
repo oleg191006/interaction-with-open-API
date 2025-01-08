@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Kaushan Script;
+}
+
+.container {
+  width: 1535px;
+  height: 737px;
+  margin: 0 auto;
+  background-image: url("/img/image\ 2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  width: 610px;
+  height: 83px;
+  font-size: 36px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 466px;
+  height: 470px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  gap: 27px;
+}
+
+.btn-submit {
+  width: 388px;
+  height: 46px;
+  background-color: #d9d9d9;
+  border: none;
+  font-family: Kaushan Script;
+  font-size: 24px;
+  transition: all 1s;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  background-color: #acacac;
+}
+
+.subTitle {
+  font-size: 36px;
+}

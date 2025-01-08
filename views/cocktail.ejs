@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/cocktail.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><%= locals.name %></div>
+      <div class="cocktail-card">
+        <div class="cocktail-type">Kind of cocktail: <%= locals.type %></div>
+        <div class="float-card">
+          <div class="ingredients">
+            <ol>
+              <% for(let i = 0; i < ingr.length; i++){%>
+              <li><%=ingr[i]%></li>
+              <%}%>
+            </ol>
+          </div>
+          <div class="cocktail-img">
+            <img src="<%= image%>" width="256px" height="256px" alt="" />
+          </div>
+        </div>
+        <div class="instruction">
+          <div class="text">How to make this cocktail?</div>
+          <div class="instruction-text"><%= instructions %></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

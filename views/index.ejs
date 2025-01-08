@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Find your favorite cocktail</div>
+      <div class="form">
+        <form id="myForm" class="form" method="post">
+          <div class="subTitle">Cocktail</div>
+          <input
+            id="get"
+            class="btn-submit"
+            type="submit"
+            value="Search by Name"
+            formaction="/search-by-name"
+          />
+          <input
+            id="get"
+            class="btn-submit"
+            type="submit"
+            value="Search by ingredient"
+            formaction="/search-by-ingredient"
+          />
+          <input
+            id="get"
+            class="btn-submit"
+            type="submit"
+            value="Search a random cocktail"
+            formaction="/random"
+          />
+          <input
+            id="get"
+            class="btn-submit"
+            type="submit"
+            value="View all alcoholic cocktails"
+            formaction="/alcohol-cocktail"
+          />
+          <input
+            id="get"
+            class="btn-submit"
+            type="submit"
+            value="View for all non-alcoholic cocktails"
+            formaction="/noalcohol-cocktail"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

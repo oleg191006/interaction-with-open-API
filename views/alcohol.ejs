@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/alcohol.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">All <%=type%> cocktails</div>
+      <div class="cocktail-card">
+        <% for(let i = 0; i < name.length ; i++) { %>
+        <div class="float-card">
+          <div class="cocktailName"><%= name[i] %></div>
+          <div class="cocktail-img">
+            <img
+              class="image"
+              src="<%=image[i]%>"
+              width="100"
+              height="100"
+              alt="Cocktail Image"
+            />
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
