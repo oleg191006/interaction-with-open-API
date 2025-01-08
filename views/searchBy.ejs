@@ -7,7 +7,6 @@
       href="https://fonts.googleapis.com/css?family=Kaushan+Script:regular"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/styles/byName.css" />
     <title>Document</title>
   </head>
@@ -17,13 +16,11 @@
         <div class="title">Enter the main ingredient</div>
         <input type="text" class="nameInput" id="nameInput" name="name" />
         <div class="btn">
-          <input
-            id="get"
-            class="btn-back button"
-            type="submit"
-            value="Back to home page"
-            formaction="/"
-          />
+          <!-- Back to home page link -->
+          <button class="btn-back button">
+            <a href="/">Back to home page</a>
+          </button>
+          <!-- Search button (submit form) -->
           <input
             id="get"
             class="btn-submit button"
